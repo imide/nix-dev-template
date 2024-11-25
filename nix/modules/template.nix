@@ -1,9 +1,9 @@
 { inputs, ... }:
 {
   flake.templates = {
-    default = inputs.self.templates.dev;
+    default = inputs.self.templates.nix-dev-template;
 
-    dev = {
+    nix-dev-template = {
       description = "a nix flake template for all things development";
       path = builtins.path { path = inputs.self; };
     };
